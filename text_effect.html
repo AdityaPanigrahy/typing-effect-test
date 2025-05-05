@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Effect</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    body {
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    #typed {
+      color: #000; /* Change to #fff if embedding on dark background */
+      font-size: 36px;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <span id="typed"></span>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ["Welcome to Ramn's Research Lab"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: false
+    });
+  </script>
+</body>
+</html>
