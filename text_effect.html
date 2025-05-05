@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Typing Effect</title>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       background: transparent;
@@ -12,10 +13,14 @@
       text-align: center;
     }
     #typed {
-      color: #000; /* Change to #fff if embedding on dark background */
-      font-size: 36px;
-      font-family: Arial, sans-serif;
+      color: white;
+      font-size: 40px;
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
       padding: 20px;
+    }
+    .cyan {
+      color: cyan;
     }
   </style>
 </head>
@@ -23,7 +28,7 @@
   <span id="typed"></span>
   <script>
     var typed = new Typed('#typed', {
-      strings: ["Welcome to Ramn's Research Lab"],
+      strings: ["Welcome to Ramn's <span class='cyan'>Research</span> Lab"],
       typeSpeed: 50,
       backSpeed: 50,
       loop: false
